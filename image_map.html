@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image map</title>
+</head>
+<body>
+    <img src="./images/shapes.png" alt="shapes"  usemap="#image">
+    <map name="image">
+        <area shape="circle" coords="367,449,209,130" href="https://www.google.com" alt="circle shape" title="It's a circle">
+        <area shape="poly" coords="667,651,1171,651,921,207" href="https://www.netflix.com" alt="triangle shape" title="It's a triangle">
+        <area shape="rect" coords="1265,191,1725,651" href="https://www.youtube.com" alt="square shape" title="It's a square">
+    </map>
+<br><br>
+    <img src="images/food.jpg" alt="french food" usemap="#image2">
+    <map name="image2">
+        <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="https://www.daraz.pk/" alt="food" onclick="clickfunction()" title="it's food">
+    </map>
+
+    <script>
+        function clickfunction()
+        {
+          alert("Moving to daraz mart site");
+        }
+    </script>
+
+</body>
+</html>
