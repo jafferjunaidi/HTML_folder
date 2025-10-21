@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web2</title>
+    <style>
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      color: #333;
+    }
+    
+ .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .gallery-item {
+      /* background: white;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px; */
+      width: 200px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 150px;
+      border-radius: 6px;
+    }
+
+    .gallery-item p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+
+     .container {
+            display: flex;
+            align-items: flex-start;
+            max-width: 800px;
+            margin: auto;
+            gap: 20px;
+        }
+        .image-column img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-left: 275px;
+        }
+        .about-column {
+            font-family: Arial, sans-serif;
+        }
+        .about-column h2 {
+            margin-bottom: 10px;
+        }
+        .about-column ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bold;">Welcome To My Website</h1>
+    <p style="font-family: 'Times New Roman', Times, serif; font-weight: 500;">Hello, my name is Sarah. This is my personal website.</p>
+
+     <div class="container">
+        <div class="image-column">
+            <img src="./images/girl.jpeg" height="145px" alt="Profile Image">
+        </div>
+        <div class="about-column">
+            <h2 style="font-family: 'Times New Roman', Times, serif;">About Me</h2>
+            <ul>
+                <li>Shooting</li>
+                <li>Reading</li>
+                <li>Cooking</li>
+            </ul>
+        </div>
+    </div>
+
+         <h1>Images Gallery</h1>
+
+       <div class="gallery">
+
+        <div class="gallery-item">
+        <img src="./images/car.jpg" alt="Yellow car">
+        <p>Yellow Car</p>
+        </div>
+
+        <div class="gallery-item">
+        <img src="./images/flower.jpg" alt="Beautiful flower">
+        <p>Beautiful Flower</p>
+        </div> 
+
+        <div class="gallery-item">
+        <img src="./images/mountain.jpg" alt="Mountain">
+        <p>Mount Fuji</p>
+        </div>
+
+        </div>
+<br><br>
+            <form> 
+        <fieldset>
+        <legend style="font-size: 30px; font-weight: 600;">Contact Me</legend><br>
+        <label for="First name">Name:</label> <input type="text" style="margin-bottom: 11px;"><br>
+    
+                <label for="Age">Age:</label> <input type="number" style="margin-bottom: 11px;"><br>
+
+         Gender:<label>
+        <input type="radio" value="Male" name="choice"> 
+         Male
+         </label>
+
+         <label>
+        <input type="radio" value="Female" name="choice" style="margin-bottom: 15px;"> 
+         Female
+        </label><br>
+
+        <label for="Favourite Subject:">Favourite Subject: </label>
+        <select style="margin-bottom: 10px;">
+            <option value="Computer">Computer</option>
+            <option value="Chemistry">Chemistry</option>        
+            <option value="Science">Science</option>
+            <option value="English" selected>English</option>
+            <option value="Pysics">Pysics</option>
+        </select> <br>
+       <label for="">Message: </label><textarea></textarea>
+        <br>
+        <input type="submit" style="margin-right: 45px;">
+        </fieldset>
+    </form>   
+</body>
+</html>
